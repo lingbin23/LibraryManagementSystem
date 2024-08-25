@@ -45,7 +45,7 @@ namespace LibraryManagementSystem.Services
 
         public async Task AddBookAsync(Book book)
         {
-            if (await _bookRepository.IsISBNExistsAsync(book.ISBN))
+            if (await _bookRepository.IsISBNExistsAsync(book.ISBN, book.Id))
             {
                 throw new InvalidOperationException("A book with the same ISBN already exists.");
             }
@@ -64,6 +64,10 @@ namespace LibraryManagementSystem.Services
 
         public async Task UpdateBookAsync(Book book)
         {
+            if (await _bookRepository.IsISBNExistsAsync(book.ISBN, book.Id))
+            {
+                throw new InvalidOperationException("A book with the same ISBN already exists.");
+            }
             if (!await _bookRepository.IsValidPublishedYearAsync(book.PublishedYear))
             {
                 throw new InvalidOperationException("The published year cannot be in the future.");

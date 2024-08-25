@@ -57,9 +57,9 @@ namespace LibraryManagementSystem.Repositories
             return Task.CompletedTask;
         }
 
-        public Task<bool> IsISBNExistsAsync(string isbn)
+        public Task<bool> IsISBNExistsAsync(string isbn, int? id)
         {
-            var exists = _books.Any(b => b.ISBN == isbn);
+            var exists = _books.Any(b => b.ISBN == isbn & b.Id != id);
             return Task.FromResult(exists);
         }
 

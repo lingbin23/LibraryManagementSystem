@@ -35,12 +35,21 @@ namespace LibraryManagementSystem.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddBook([FromBody] Book book)
+        public async Task<IActionResult> AddBook([FromBody] BookCreateUpdateDto bookDto)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
+            var book = new Book
+            {
+                Title = bookDto.Title,
+                AuthorId = bookDto.AuthorId,
+                PublishedYear = bookDto.PublishedYear,
+                ISBN = bookDto.ISBN
+            };
+
 
             try
             {
@@ -54,12 +63,21 @@ namespace LibraryManagementSystem.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateBook(int id, [FromBody] Book book)
+        public async Task<IActionResult> UpdateBook(int id, [FromBody] BookCreateUpdateDto bookDto)
         {
-            if (id != book.Id)
+            if (!ModelState.IsValid)
             {
-                return BadRequest("Book ID mismatch.");
+                return BadRequest(ModelState);
             }
+
+            var book = new Book
+            {
+                Id = id,
+                Title = bookDto.Title,
+                AuthorId = bookDto.AuthorId,
+                PublishedYear = bookDto.PublishedYear,
+                ISBN = bookDto.ISBN
+            };
 
             try
             {

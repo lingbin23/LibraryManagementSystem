@@ -51,9 +51,6 @@ This is a simple Library Management System built with .NET Core and C#. It provi
 ## Error Handling
 The API returns appropriate HTTP status codes for different error scenarios, such as 400 Bad Request for validation errors and 404 Not Found for non-existent resources. Error messages are descriptive to help clients understand the issue.
 
-## Contributing
-Contributions are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes. Ensure your code follows the project's coding standards and includes appropriate tests.
-
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 

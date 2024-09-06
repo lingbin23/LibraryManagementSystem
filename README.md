@@ -31,8 +31,8 @@ This is a simple Library Management System built with .NET Core and C#. It provi
 
 ## Usage
 - **Retrieve all books:** `GET /api/books`
-- **Retrieve a book by ID:** `GET /api/books/{id}`
-- **Add a new book:** `POST /api/books`
+- **Retrieve a book by ID:** `GET /api/books/get{id}`
+- **Add a new book:** `POST /api/books/add`
     ```json
     {
       "title": "Book Title",
@@ -41,8 +41,8 @@ This is a simple Library Management System built with .NET Core and C#. It provi
       "isbn": "1234567890"
     }
     ```
-- **Update a book:** `PUT /api/books/{id}`
-- **Delete a book:** `DELETE /api/books/{id}`
+- **Update a book:** `PUT /api/books/update{id}`
+- **Delete a book:** `DELETE /api/books/delete{id}`
 
 ## Testing
 1. Open the solution in Visual Studio or your preferred IDE.

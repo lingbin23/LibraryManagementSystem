@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem", "LibraryManagementSystem.csproj", "{D18B0DAC-0F31-4BCD-B67D-62A278C25F44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem", "LibraryManagementSystem.csproj", "{D18B0DAC-0F31-4BCD-B67D-62A278C25F44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Tests", "..\LibraryManagementSystem.Tests\LibraryManagementSystem.Tests.csproj", "{34DF81F3-14C3-44F6-9C31-80B0B0CE24FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Tests", "..\LibraryManagementSystem.Tests\LibraryManagementSystem.Tests.csproj", "{5105FEE4-9842-422B-A348-C1723DBF95C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{D18B0DAC-0F31-4BCD-B67D-62A278C25F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D18B0DAC-0F31-4BCD-B67D-62A278C25F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D18B0DAC-0F31-4BCD-B67D-62A278C25F44}.Release|Any CPU.Build.0 = Release|Any CPU
-		{34DF81F3-14C3-44F6-9C31-80B0B0CE24FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34DF81F3-14C3-44F6-9C31-80B0B0CE24FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34DF81F3-14C3-44F6-9C31-80B0B0CE24FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34DF81F3-14C3-44F6-9C31-80B0B0CE24FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5105FEE4-9842-422B-A348-C1723DBF95C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5105FEE4-9842-422B-A348-C1723DBF95C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5105FEE4-9842-422B-A348-C1723DBF95C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5105FEE4-9842-422B-A348-C1723DBF95C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

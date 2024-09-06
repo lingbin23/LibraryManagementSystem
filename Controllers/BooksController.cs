@@ -23,7 +23,7 @@ namespace LibraryManagementSystem.Controllers
             return Ok(books);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("Get/{id}")]
         public async Task<IActionResult> GetBookById(int id)
         {
             var book = await _bookService.GetBookByIdAsync(id);
@@ -34,7 +34,7 @@ namespace LibraryManagementSystem.Controllers
             return Ok(book);
         }
 
-        [HttpPost]
+        [HttpPost("Add")]
         public async Task<IActionResult> AddBook([FromBody] BookCreateUpdateDto bookDto)
         {
             if (!ModelState.IsValid)
@@ -62,7 +62,7 @@ namespace LibraryManagementSystem.Controllers
             }
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("Update/{id}")]
         public async Task<IActionResult> UpdateBook(int id, [FromBody] BookCreateUpdateDto bookDto)
         {
             if (!ModelState.IsValid)
@@ -90,7 +90,7 @@ namespace LibraryManagementSystem.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteBook(int id)
         {
             try
